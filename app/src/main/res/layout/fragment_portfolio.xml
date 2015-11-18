@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center_horizontal"
+    tools:context=".PortfolioFragment"
+    tools:showIn="@layout/activity_portfolio">
+
+    <Button
+        android:id="@+id/btn_popular_movies"
+        android:layout_width="@dimen/portfolio_btn_width"
+        android:layout_height="@dimen/portfolio_btn_height"
+        android:layout_marginTop="@dimen/portfolio_btn_spacing"
+        android:text="@string/popular_movies"
+        style="@style/MyBoringButton"
+        />
+
+    <Button
+        android:id="@+id/btn_super_duo"
+        android:layout_width="@dimen/portfolio_btn_width"
+        android:layout_height="@dimen/portfolio_btn_height"
+        android:layout_marginTop="@dimen/portfolio_btn_spacing"
+        android:text="@string/super_duo"
+        style="@style/MyBoringButton"
+        />
+
+    <Button
+        android:id="@+id/btn_build_it_bigger"
+        android:layout_width="@dimen/portfolio_btn_width"
+        android:layout_height="@dimen/portfolio_btn_height"
+        android:layout_marginTop="@dimen/portfolio_btn_spacing"
+        android:text="@string/build_it_bigger"
+        style="@style/MyBoringButton"
+        />
+
+    <Button
+        android:id="@+id/btn_make_your_app_material"
+        android:layout_width="@dimen/portfolio_btn_width"
+        android:layout_height="@dimen/portfolio_btn_height"
+        android:layout_marginTop="@dimen/portfolio_btn_spacing"
+        android:text="@string/make_your_app_material"
+        style="@style/MyBoringButton"
+        />
+
+    <Button
+        android:id="@+id/btn_capstone"
+        android:layout_width="@dimen/portfolio_btn_width"
+        android:layout_height="@dimen/portfolio_btn_height"
+        android:layout_marginTop="@dimen/portfolio_btn_spacing"
+        android:text="@string/capstone"
+        style="@style/MyAccentButton"
+        />
+
+</LinearLayout>
