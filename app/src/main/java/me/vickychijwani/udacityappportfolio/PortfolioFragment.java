@@ -1,5 +1,7 @@
 package me.vickychijwani.udacityappportfolio;
 
+import android.content.ComponentName;
+import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -29,10 +31,14 @@ public class PortfolioFragment extends Fragment implements View.OnClickListener 
         if (fragmentView == null) {
             return;
         }
+        String pkg = "me.vickychijwani.";
         switch (v.getId()) {
             case R.id.btn_popular_movies:
-                Snackbar.make(fragmentView, R.string.popular_movies, Snackbar.LENGTH_SHORT)
-                        .show();
+                Intent intent = new Intent();
+                ComponentName componentName = new ComponentName(pkg + "popularmovies",
+                        pkg + "popularmovies.ui.MoviesActivity");
+                intent.setComponent(componentName);
+                startActivity(intent);
                 break;
             case R.id.btn_super_duo:
                 Snackbar.make(fragmentView, R.string.super_duo, Snackbar.LENGTH_SHORT)
