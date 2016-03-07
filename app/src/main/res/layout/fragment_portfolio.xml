@@ -25,12 +25,21 @@
             />
 
         <Button
-            android:id="@+id/btn_super_duo"
+            android:id="@+id/btn_super_duo_alexandria"
             style="@style/MyBoringButton"
             android:layout_width="@dimen/portfolio_btn_width"
             android:layout_height="@dimen/portfolio_btn_height"
             android:layout_marginTop="@dimen/portfolio_btn_spacing"
-            android:text="@string/super_duo"
+            android:text="@string/super_duo_alexandria"
+            />
+
+        <Button
+            android:id="@+id/btn_super_duo_football_scores"
+            style="@style/MyBoringButton"
+            android:layout_width="@dimen/portfolio_btn_width"
+            android:layout_height="@dimen/portfolio_btn_height"
+            android:layout_marginTop="@dimen/portfolio_btn_spacing"
+            android:text="@string/super_duo_football_scores"
             />
 
         <Button

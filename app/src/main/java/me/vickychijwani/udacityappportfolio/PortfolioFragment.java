@@ -18,7 +18,8 @@ public class PortfolioFragment extends Fragment implements View.OnClickListener 
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_portfolio, container, false);
         view.findViewById(R.id.btn_popular_movies).setOnClickListener(this);
-        view.findViewById(R.id.btn_super_duo).setOnClickListener(this);
+        view.findViewById(R.id.btn_super_duo_alexandria).setOnClickListener(this);
+        view.findViewById(R.id.btn_super_duo_football_scores).setOnClickListener(this);
         view.findViewById(R.id.btn_build_it_bigger).setOnClickListener(this);
         view.findViewById(R.id.btn_make_your_app_material).setOnClickListener(this);
         view.findViewById(R.id.btn_capstone).setOnClickListener(this);
@@ -32,17 +33,26 @@ public class PortfolioFragment extends Fragment implements View.OnClickListener 
             return;
         }
         String pkg = "me.vickychijwani.";
+        Intent intent = new Intent();
+        ComponentName componentName;
         switch (v.getId()) {
             case R.id.btn_popular_movies:
-                Intent intent = new Intent();
-                ComponentName componentName = new ComponentName(pkg + "popularmovies",
+                componentName = new ComponentName(pkg + "popularmovies",
                         pkg + "popularmovies.ui.MoviesActivity");
                 intent.setComponent(componentName);
                 startActivity(intent);
                 break;
-            case R.id.btn_super_duo:
-                Snackbar.make(fragmentView, R.string.super_duo, Snackbar.LENGTH_SHORT)
-                        .show();
+            case R.id.btn_super_duo_alexandria:
+                componentName = new ComponentName("it.jaschke.alexandria",
+                        "it.jaschke.alexandria.MainActivity");
+                intent.setComponent(componentName);
+                startActivity(intent);
+                break;
+            case R.id.btn_super_duo_football_scores:
+                componentName = new ComponentName("barqsoft.footballscores",
+                        "barqsoft.footballscores.MainActivity");
+                intent.setComponent(componentName);
+                startActivity(intent);
                 break;
             case R.id.btn_build_it_bigger:
                 Snackbar.make(fragmentView, R.string.build_it_bigger, Snackbar.LENGTH_SHORT)
